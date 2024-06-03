@@ -1,2 +1,2 @@
-# JS-Projects
-These are the small projects that I created while learning JavaScript
+# JS-Codes
+These are the small codes that I created while learning JavaScript
