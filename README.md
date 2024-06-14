@@ -1,2 +1,2 @@
 # JS-Codes
-These are the small codes that I created while learning JavaScript
+These are the codes that I created while learning JavaScript(for future revision)
