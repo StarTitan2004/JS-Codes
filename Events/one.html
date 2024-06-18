@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color:aliceblue;">
+    <h2>Space Images</h2>
+    <ul id="images">
+        <li><img width="200px" id="1" src="1 23_54_49.png" alt="moon"></li>
+        <li><img width="200px" id="2" src="2 00_06_26.png" alt="moon"></li>
+        <li><img width="200px" id="3" src="3 00_28_47.png" alt="moon"></li>
+        <li><img width="200px" id="4" src="4 00_34_29.png" alt="moon"></li>
+        <li><img width="200px" id="5" src="5 00_46_58.png" alt="moon"></li>
+        <li><img width="200px" id="6" src="5.5 00_49_04.png" alt="moon"></li>
+        <li><img width="200px" id="7" src="6 00_57_18.png" alt="moon" onclick="alert('Eclipse Start')"></li>
+        <li><img width="200px" id="8" src="7.5-01_07_47.png" alt="moon"></li>
+        <li><img width="200px" id="9" src="7-01_02_03.png" alt="moon"></li>
+        <li><img width="200px" id="10" src="8-01_11_50.png" alt="moon"></li>
+        <li><img width="200px" id="11" src="9-01_21_32.png" alt="moon"></li>
+        <li><img width="200px" id="12" src="10-01_25_29.png" alt="moon"></li>
+        <li><img width="200px" id="13" src="12-01_37_41.png" alt="moon"></li>
+        <li><img width="200px" id="14" src="13-01_43_45.png" alt="moon"></li>
+        <li><img width="200px" id="15" src="14-01_46_28.png" alt="moon"></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id="Google" target="_blank">Google</a></li>
+    </ul>
+
+    
+</body>
+<script>
+    // document.getElementById('4').onclick=function(){
+    //     alert("Penumbral Eclipse Started")
+    // }
+    
+    document.getElementById('4').addEventListener('click',function(){
+        //alert("Penumbral Eclipse Started")
+    },false)
+
+
+    //type, timestamp, defaultPrevented, 
+    //target, toElement, srcElement, currentTarget,
+    //clientX, cientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+    document.getElementById('5').addEventListener('click',function(e){
+        console.log("Moon 5 image clicked",e);
+        e.stopPropagation()    
+    },false)
+
+    document.getElementById('google').addEventListener('click',function(f){
+        console.log(f);
+    },false)
+     
+
+</script>
+<!-- event bubbling
+captuing 
+annonymus function
+arrow function-->
+
+
+</html>
+
+
+
+
+
